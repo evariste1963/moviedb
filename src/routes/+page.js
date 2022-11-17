@@ -3,8 +3,13 @@ export async function load({ fetch }) {
 	let productData = await productsRes.json();
 	let products = productData.products;
 
+	let response = await fetch('https://jsonplaceholder.typicode.com/todos');
+	let todos = await response.json();
+	console.log(todos);
+
 	console.log(products);
 	return {
-		products
+		products,
+		todos
 	};
 }
