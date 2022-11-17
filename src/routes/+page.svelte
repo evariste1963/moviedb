@@ -1,19 +1,14 @@
 <script>
 	export let data;
-	const { products, todos } = data;
+	const { movies } = data;
+	// console.log(movies[0]);
 </script>
 
 <ul>
-	{#each products as product}
-		<h2>{product.title}</h2>
-		<h4>{product.description}</h4>
-		<h3>£ {product.price}</h3>
-	{/each}
-</ul>
-
-<ul>
-	{#each todos as todo}
-		<h2>{todo.title}</h2>
-		<h4>{todo.completed}</h4>
+	{#each movies as movie}
+		<h3>{movie.title}</h3>
+		<h5>{movie.overview}</h5>
+		<h4>released: {movie.release_date}</h4>
+		<br />
 	{/each}
 </ul>

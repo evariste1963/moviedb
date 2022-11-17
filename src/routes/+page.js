@@ -1,15 +1,15 @@
+let API_KEY = '0e04b7df85fdc659ca268b3647959793';
+
 export async function load({ fetch }) {
-	let productsRes = await fetch('https://dummyjson.com/products?limit=10');
-	let productData = await productsRes.json();
-	let products = productData.products;
+	let res = await fetch(
+		`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`
+	);
+	let movieObj = await res.json();
+	let movies = movieObj.results;
 
-	let response = await fetch('https://jsonplaceholder.typicode.com/todos');
-	let todos = await response.json();
-	console.log(todos);
-
-	console.log(products);
-	return {
-		products,
-		todos
-	};
+	if (movies) {
+		return {
+			movies
+		};
+	}
 }
