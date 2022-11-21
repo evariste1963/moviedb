@@ -1,5 +1,5 @@
-<!-- <script>
-	import Card from '../lib/shared/Card.svelte';
+<script>
+	import Card from '../../lib/shared/Card.svelte';
 	export let data;
 	const { movies } = data;
 	console.log(movies[0]);
@@ -27,6 +27,4 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
-</style> -->
-
-<h1>Home Page, welcome!</h1>
+</style>
