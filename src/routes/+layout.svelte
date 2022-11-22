@@ -1,6 +1,7 @@
 <nav>
 	<button><a href="/">Home</a></button>
-	<button><a href="/Movies/PopularMovies ">Popular Moives</a></button>
+	<button><a href="/Movies/PopularMovies ">Popular Movies</a></button>
+	<button><a href="/Movies/TopRatedMovies ">Top Rated Movies</a></button>
 </nav>
 <slot />
 
