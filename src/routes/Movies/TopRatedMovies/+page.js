@@ -4,12 +4,12 @@ export async function load({ fetch }) {
 	let res = await fetch(
 		`https://api.themoviedb.org/3/movie/top_rated?api_key=${API_KEY}&language=en-US&page=1`
 	);
-	let trmovieObj = await res.json();
-	let trmovies = trmovieObj.results;
+	let movieObj = await res.json();
+	let movies = movieObj.results;
 
-	if (trmovies) {
+	if (movies) {
 		return {
-			trmovies
+			movies
 		};
 	}
 }

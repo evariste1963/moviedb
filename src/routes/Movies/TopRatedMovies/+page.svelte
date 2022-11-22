@@ -1,17 +1,17 @@
 <script>
 	import Card from '../../../lib/shared/Card.svelte';
 	export let data;
-	const { trmovies } = data;
-	console.log(trmovies[0]);
+	const { movies } = data;
+	console.log(movies[0]);
 </script>
 
 <ul>
-	{#each trmovies as trmovie}
+	{#each movies as movie}
 		<Card>
-			<img src={`https:/image.tmdb.org/t/p/w300/${trmovie.poster_path}`} alt="movie.title" />
-			<h3>{trmovie.title}</h3>
-			<p>{trmovie.overview}</p>
-			<h4>released: {trmovie.release_date}</h4>
+			<img src={`https:/image.tmdb.org/t/p/w300/${movie.poster_path}`} alt="movie.title" />
+			<h3>{movie.title}</h3>
+			<p>{movie.overview}</p>
+			<h4>released: {movie.release_date}</h4>
 		</Card>
 	{/each}
 </ul>
