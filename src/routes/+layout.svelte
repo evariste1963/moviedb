@@ -1,6 +1,6 @@
 <nav>
 	<button><a href="/">Home</a></button>
-	<button><a href="/PopularMovies ">Popular Moives</a></button>
+	<button><a href="/Movies/PopularMovies ">Popular Moives</a></button>
 </nav>
 <slot />
 
