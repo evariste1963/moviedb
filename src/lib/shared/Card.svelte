@@ -4,10 +4,10 @@
 
 <style>
 	.card {
-		margin: 20px;
+		margin: 10px 5px;
 		background: rgb(199, 196, 196);
-		padding: 20px;
-		border-radius: 6px;
+		padding: 15px 15px 0px 15px;
+		border-radius: 1rem;
 		box-shadow: 2px 4px rgba(0, 0, 0, 0.4);
 		transition: all 0.2s ease-in-out;
 	}
