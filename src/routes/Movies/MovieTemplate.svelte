@@ -1,5 +1,5 @@
 <script>
-	import Card from '../../lib/shared/Card.svelte';
+	import Card from '$lib/shared/Card.svelte';
 	export let movies;
 </script>
 
