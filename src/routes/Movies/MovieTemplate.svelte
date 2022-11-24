@@ -17,13 +17,13 @@
 <style>
 	ul {
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	}
 
 	img {
 		width: 100%;
-		height: 30vh;
-		object-fit: cover;
+		height: auto;
+		object-fit: scale-down;
 		border-radius: 1rem;
 	}
 </style>
