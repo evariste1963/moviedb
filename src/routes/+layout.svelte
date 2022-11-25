@@ -14,5 +14,6 @@
 		padding: 10px;
 		border-radius: 10%;
 		background-color: bisque;
+		text-decoration: none;
 	}
 </style>
