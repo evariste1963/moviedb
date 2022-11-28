@@ -1,6 +1,7 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	export let movies;
+	console.log(movies[0]);
 </script>
 
 <ul>
