@@ -7,7 +7,7 @@
 <ul>
 	{#each movies as movie}
 		<Card>
-			<a href={`/Movies/PopularMovies/${movie.id}`}>
+			<a href={`/Movies/${movie.id}`}>
 				<img src={`https:/image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
 			</a>
 			<h3>{movie.title}</h3>
