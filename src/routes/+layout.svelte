@@ -10,10 +10,11 @@
 		display: flex;
 	}
 	a {
+		font-family: cursive;
 		margin: 20px;
 		padding: 10px;
 		border-radius: 10%;
-		background-color: bisque;
+		background-color: rgb(243, 240, 240);
 		text-decoration: none;
 	}
 </style>
