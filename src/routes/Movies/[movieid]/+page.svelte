@@ -6,15 +6,15 @@
 </script>
 
 <section class="page">
-	<h1 class="heading">{movie.original_title}</h1>
+	<h1 class="heading">{movie.title}</h1>
 	<h2 class="tagline">{movie.tagline}</h2>
 	<h2>{year} - {movie.runtime} mins</h2>
 	<div class="image">
-		<img src={`https:/image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="" />
+		<img src={`https:/image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} />
 	</div>
-	<h3 class="overview">
+	<p class="overview">
 		{movie.overview}
-	</h3>
+	</p>
 </section>
 
 <style>
