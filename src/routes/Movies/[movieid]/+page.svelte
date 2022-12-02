@@ -3,6 +3,10 @@
 	const { movie } = data;
 	console.log(movie);
 	let year = movie.release_date.substr(0, 4);
+	let picture = movie.backdrop_path;
+	if (!movie.backdrop_path) {
+		picture = movie.poster_path;
+	}
 </script>
 
 <section class="page">
@@ -10,7 +14,7 @@
 	<h2 class="tagline">{movie.tagline}</h2>
 	<h2>{year} - {movie.runtime} mins</h2>
 	<div class="image">
-		<img src={`https:/image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt={movie.title} />
+		<img src={`https:/image.tmdb.org/t/p/original/${picture}`} alt={movie.title} />
 	</div>
 	<p class="overview">
 		{movie.overview}
