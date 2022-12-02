@@ -4,17 +4,19 @@
 	console.log(movies[0]);
 </script>
 
-<ul>
-	{#each movies as movie}
-		<Card>
-			<a href={`/Movies/${movie.id}`}>
-				<img src={`https:/image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
-			</a>
-			<h3>{movie.title}</h3>
-			<h4>{movie.release_date}</h4>
-		</Card>
-	{/each}
-</ul>
+<div class="section">
+	<ul>
+		{#each movies as movie}
+			<Card>
+				<a href={`/Movies/${movie.id}`}>
+					<img src={`https:/image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
+				</a>
+				<h3>{movie.title}</h3>
+				<h4>{movie.release_date}</h4>
+			</Card>
+		{/each}
+	</ul>
+</div>
 
 <style>
 	ul {

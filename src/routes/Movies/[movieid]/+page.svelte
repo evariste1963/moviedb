@@ -33,6 +33,7 @@
 		width: 90%;
 		height: fit-content;
 		text-align: center;
+		margin-top: 4rem;
 	}
 
 	.heading {
