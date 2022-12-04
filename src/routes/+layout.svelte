@@ -10,7 +10,7 @@
 		background-color: rgba(250, 250, 250, 0.9); /* Black background color */
 		position: fixed; /* Make it stick/fixed */
 		top: 0; /* Stay on top */
-		width: 100%; /* Full width */
+		width: 60%; /* Full width */
 		transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	}
 	/* Style the navbar links */

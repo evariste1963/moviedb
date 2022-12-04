@@ -1,10 +1,14 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
-	export let movies;
-	console.log(movies[0]);
+	export let data;
+	const { movies, page } = data;
+	console.log(page);
 </script>
 
 <div class="section">
+	<div class="pages">
+		<a href="/Movies/TopRatedMovies" data-sveltekit-prefetch> page {page + 1} ></a>
+	</div>
 	<ul>
 		{#each movies as movie}
 			<Card>
@@ -19,6 +23,10 @@
 </div>
 
 <style>
+	.pages {
+		margin-top: 60px;
+		text-align: center;
+	}
 	ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
