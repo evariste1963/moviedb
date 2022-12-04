@@ -7,7 +7,8 @@
 
 <div class="section">
 	<div class="pages">
-		<a href="/Movies/TopRatedMovies" data-sveltekit-prefetch> page {page + 1} ></a>
+		<a href="/Movies/TopRatedMovies" data-sveltekit-prefetch> prev - </a>
+		<a href="/Movies/PopularMovies" data-sveltekit-prefetch> - next </a>
 	</div>
 	<ul>
 		{#each movies as movie}
@@ -24,8 +25,12 @@
 
 <style>
 	.pages {
-		margin-top: 60px;
+		margin-top: 4rem;
 		text-align: center;
+	}
+
+	.pages a {
+		text-decoration: none;
 	}
 	ul {
 		display: grid;

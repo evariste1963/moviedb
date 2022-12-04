@@ -7,6 +7,8 @@ export async function load({ fetch }) {
 	);
 	let movieObj = await res.json();
 	let movies = movieObj.results;
+	page++;
+	console.log(page);
 
 	if (movies) {
 		return {
