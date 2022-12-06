@@ -1,14 +1,15 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	export let data;
-	const { movies, page } = data;
+	const { movies, page, prev, next } = data;
 	console.log(page);
 </script>
 
 <div class="section">
 	<div class="pages">
-		<a href="/Movies/TopRatedMovies" data-sveltekit-prefetch> prev - </a>
-		<a href="/Movies/PopularMovies" data-sveltekit-prefetch> - next </a>
+		<button class="prev">{prev}</button>
+		<p>{page}</p>
+		<button class="next">{next}</button>
 	</div>
 	<ul>
 		{#each movies as movie}
@@ -25,12 +26,22 @@
 
 <style>
 	.pages {
+		display: flex;
 		margin-top: 4rem;
 		text-align: center;
+		justify-content: center;
 	}
 
-	.pages a {
-		text-decoration: none;
+	button {
+		padding: 0.8rem;
+		margin: 0 2rem;
+	}
+	.prev {
+		border-radius: 50% 0 0 50%;
+	}
+
+	.next {
+		border-radius: 0 50% 50% 0;
 	}
 	ul {
 		display: grid;

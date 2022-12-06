@@ -9,12 +9,12 @@ export async function load({ fetch }) {
 	);
 	let movieObj = await res.json();
 	let movies = movieObj.results;
-	page++;
-	prev = page - 1;
-	next = page + 1;
-	console.log(page, prev, next);
 
 	if (movies) {
+		page++;
+		prev = page - 1;
+		next = page + 1;
+		console.log(page, prev, next);
 		return {
 			movies,
 			page,
