@@ -7,9 +7,9 @@
 
 <div class="section">
 	<div class="pages">
-		<button class="prev">{prev}</button>
+		<button class="prev" on:click={console.log('hi')}>{prev}</button>
 		<p>{page}</p>
-		<button class="next">{next}</button>
+		<button class="next" on:click={console.log('lo')}>{next}</button>
 	</div>
 	<ul>
 		{#each movies as movie}
@@ -32,7 +32,8 @@
 		justify-content: center;
 	}
 
-	button {
+	.pages .prev,
+	.pages .next {
 		padding: 0.8rem;
 		margin: 0 2rem;
 	}
