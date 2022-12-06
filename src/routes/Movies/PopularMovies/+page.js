@@ -1,5 +1,7 @@
 let API_KEY = '0e04b7df85fdc659ca268b3647959793';
 let page = 1;
+let prev = 0;
+let next = 2;
 
 export async function load({ fetch }) {
 	let res = await fetch(
@@ -8,12 +10,16 @@ export async function load({ fetch }) {
 	let movieObj = await res.json();
 	let movies = movieObj.results;
 	page++;
-	console.log(page);
+	prev = page - 1;
+	next = page + 1;
+	console.log(page, prev, next);
 
 	if (movies) {
 		return {
 			movies,
-			page
+			page,
+			prev,
+			next
 		};
 	}
 }
