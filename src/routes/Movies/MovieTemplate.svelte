@@ -7,9 +7,9 @@
 
 <div class="section">
 	<div class="pages">
-		<button class="prev" on:click={console.log('hi')}>{prev}</button>
+		<button class="prev" on:click>{prev}</button>
 		<p>{page}</p>
-		<button class="next" on:click={console.log('lo')}>{next}</button>
+		<button class="next" on:click>{next}</button>
 	</div>
 	<ul>
 		{#each movies as movie}
