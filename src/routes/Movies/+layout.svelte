@@ -1,5 +1,5 @@
 <script>
-    export let search
+	export let search;
 </script>
 
 <slot {search} />
