@@ -1,14 +1,18 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	export let data;
-	const { movies } = data;
+	const { movies, page } = data;
+
+	let prev = page - 1;
+	let next = page + 1;
+	console.log(movies, page);
 </script>
 
 <div class="section">
 	<div class="pages">
-		<button class="prev" on:click />
-		<p />
-		<button class="next" on:click />
+		<button class="prev" on:click>{prev}</button>
+		<p>{page}</p>
+		<button class="next" on:click>{next}</button>
 	</div>
 	<ul>
 		{#each movies as movie}

@@ -4,7 +4,7 @@
 
 	// const { movies } = data;
 	const nextPage = () => {
-		console.log('this is page:', data.next);
+		console.log('the next page is:', data.page + 1);
 	};
 </script>
 
