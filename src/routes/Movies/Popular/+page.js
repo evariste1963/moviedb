@@ -1,24 +1,16 @@
-// let page = 1;
-// let prev = 0;
-// let next = 2;
-export let search = 'popular';
-// export async function load({ fetch }) {
-// 	let res = await fetch(
-// 		`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=fr&page=${page}`
-// 	);
-// 	let movieObj = await res.json();
-// 	let movies = movieObj.results;
+import API from '../API.js';
+let pathname = 'popular';
 
-// if (movies) {
-// 	page++;
-// 	prev = page - 1;
-// 	next = page + 1;
-// 	console.log(page, prev, next);
-// 	return {
-// 		movies,
-// 		page,
-// 		prev,
-// 		next
-// 	};
-// }
-// }
+let page = 5;
+export async function load({ fetch }) {
+	const movieObj = await API({ fetch }, pathname, page);
+
+	let movies = movieObj.results;
+
+	if (movies) {
+		return {
+			page: movieObj.page,
+			movies
+		};
+	}
+}
