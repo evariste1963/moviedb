@@ -1,7 +1,8 @@
 import AJAX from '../API.js';
 let pathname = 'popular';
+export let nextPage;
 
-let page = 5;
+let page = 4;
 export async function load({ fetch }) {
 	const movieObj = await AJAX({ fetch }, pathname, page);
 
@@ -9,8 +10,10 @@ export async function load({ fetch }) {
 
 	if (movies) {
 		return {
-			page: movieObj.page,
-			movies
+			pager: movieObj.page,
+			movies,
+			pathname,
+			nextPage
 		};
 	}
 }

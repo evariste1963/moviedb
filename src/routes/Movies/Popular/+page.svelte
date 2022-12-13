@@ -1,7 +1,7 @@
 <script>
 	import MovieTemplate from '../MovieTemplate.svelte';
 	export let data;
-	const { movies } = data;
+	const { pathname, pager } = data;
 
 	// create page & prev next functions here? __ or on +page.js??
 	const nextPage = () => {
