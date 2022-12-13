@@ -2,7 +2,6 @@
 	import Card from '$lib/shared/Card.svelte';
 	export let data;
 	const { movies, page } = data;
-	
 
 	let prev = page - 1;
 	let next = page + 1;
