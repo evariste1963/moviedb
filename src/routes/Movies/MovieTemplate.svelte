@@ -2,10 +2,10 @@
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
 	export let data;
-	const { movies, pager, pathname } = data;
+	const { movies, pager } = data;
 
-	let prev = pager - 1;
-	let next = pager + 1;
+	//let prev = pager - 1;
+	//let next = pager + 1;
 	console.log(movies, pager);
 </script>
 
@@ -13,6 +13,7 @@
 <div class="section">
 	<div class="pages">
 		<p>Current URL: {$page.url.pathname}</p>
+		<button on:click>NEXT</button>
 		<a href={$page.url.pathname} data-sveltekit-prefetch class="prev">Prev</a>
 		<p>{pager}</p>
 		<a href={$page.url.pathname} data-sveltekit-prefetch class="next">Next</a>
