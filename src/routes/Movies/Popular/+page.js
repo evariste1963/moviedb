@@ -1,9 +1,9 @@
-import API from '../API.js';
+import AJAX from '../API.js';
 let pathname = 'popular';
 
 let page = 5;
 export async function load({ fetch }) {
-	const movieObj = await API({ fetch }, pathname, page);
+	const movieObj = await AJAX({ fetch }, pathname, page);
 
 	let movies = movieObj.results;
 
