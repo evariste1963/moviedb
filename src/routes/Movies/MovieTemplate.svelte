@@ -2,19 +2,20 @@
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
 	export let data;
-	const { movies, pager } = data;
+	const { movies, pager, pathname } = data;
 
 	let prev = pager - 1;
 	let next = pager + 1;
-	console.log(movies, page);
+	console.log(movies, pager);
 </script>
 
+<!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!!-->
 <div class="section">
-	<p>Current URL: {$page.url.pathname}</p>
 	<div class="pages">
-		<a href="/Movies/" data-sveltekit-prefetch class="prev">Prev</a>
+		<p>Current URL: {$page.url.pathname}</p>
+		<a href={$page.url.pathname} data-sveltekit-prefetch class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href="/Movies/" data-sveltekit-prefetch class="next">Next</a>
+		<a href={$page.url.pathname} data-sveltekit-prefetch class="next">Next</a>
 	</div>
 	<ul>
 		{#each movies as movie}

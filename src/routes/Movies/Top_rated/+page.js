@@ -2,9 +2,9 @@ import AJAX from '../API.js';
 let pathname = 'top_rated';
 export let nextPage;
 
-let page = 6;
+let pager = 6;
 export async function load({ fetch }) {
-	const movieObj = await AJAX({ fetch }, pathname, page);
+	const movieObj = await AJAX({ fetch }, pathname, pager);
 
 	let movies = movieObj.results;
 
