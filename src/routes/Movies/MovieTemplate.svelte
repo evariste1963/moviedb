@@ -9,7 +9,7 @@
 	console.log(movies, pager);
 </script>
 
-<!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!!-->
+<!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!! maybe create a new page(s) for prev and next fetches and call them frrom the a refs bvelow-->
 <div class="section">
 	<div class="pages">
 		<p>Current URL: {$page.url.pathname}</p>
