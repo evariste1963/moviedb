@@ -3,22 +3,21 @@
 	import { page } from '$app/stores';
 	export let data;
 	const { movies, pager } = data;
-	let urlref =
-		'https://api.themoviedb.org/3/movie' +
-		$page.url.pathname.slice(7) +
-		'?api_key=0e04b7df85fdc659ca268b3647959793&language=fr&page=' +
-		(pager + 4);
+	// let urlref =
+	// 	'https://api.themoviedb.org/3/movie' +
+	// 	$page.url.pathname.slice(7) +
+	// 	'?api_key=0e04b7df85fdc659ca268b3647959793&language=fr&page=' +
+	// 	(pager + 4);
 
 	//let prev = pager - 1;
 	//let next = pager + 1;
-	console.log(movies, pager, $page.url.pathname.slice(7));
+	console.log(movies, pager, $page.url.pathname.slice(7), '--data->', data);
 </script>
 
 <!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!! maybe create a new page(s) for prev and next fetches and call them frrom the a refs bvelow-->
 <div class="section">
 	<div class="pages">
-		<p>Current URL: {$page.url.pathname}</p>
-		<button on:click>NEXT</button>
+		<!--<button on:click>NEXT</button> -->
 		<a href={$page.url.pathname} target="_self" data-sveltekit-prefetch class="prev">Prev</a>
 		<p>{pager}</p>
 		<a href={$page.url.pathname} data-sveltekit-prefetch class="next" on:click>Next</a>
