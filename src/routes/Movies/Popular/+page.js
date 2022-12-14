@@ -1,7 +1,7 @@
 import AJAX from '../API.js';
 let pathname = 'popular';
 
-let pager = 4;
+let pager;
 export async function load({ fetch }) {
 	const movieObj = await AJAX({ fetch }, pathname, pager);
 
@@ -15,4 +15,3 @@ export async function load({ fetch }) {
 		};
 	}
 }
-

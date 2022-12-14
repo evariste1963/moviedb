@@ -6,7 +6,7 @@
 
 	//let prev = pager - 1;
 	//let next = pager + 1;
-	console.log(movies, pager);
+	console.log(movies, pager, $page.url.pathname);
 </script>
 
 <!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!! maybe create a new page(s) for prev and next fetches and call them frrom the a refs bvelow-->
@@ -14,9 +14,9 @@
 	<div class="pages">
 		<p>Current URL: {$page.url.pathname}</p>
 		<button on:click>NEXT</button>
-		<a href={$page.url.pathname} data-sveltekit-prefetch class="prev">Prev</a>
+		<a href={$page.url.pathname} target="_self" data-sveltekit-prefetch class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href={$page.url.pathname} data-sveltekit-prefetch class="next">Next</a>
+		<a href={$page.url.pathname} target="_self" data-sveltekit-prefetch class="next">Next</a>
 	</div>
 	<ul>
 		{#each movies as movie}
