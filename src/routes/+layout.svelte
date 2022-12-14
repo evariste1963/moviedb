@@ -1,6 +1,6 @@
 <navbar>
 	<a href="/">Home</a>
-	<a href="/Movies/Popular" data-sveltekit-prefetch>Popular Movies</a>
+	<a href="/Movies/popular" data-sveltekit-prefetch>Popular Movies</a>
 	<a href="/Movies/Top_rated" data-sveltekit-prefetch>Top Rated Movies</a>
 </navbar>
 <slot />
