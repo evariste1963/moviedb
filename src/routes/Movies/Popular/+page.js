@@ -7,7 +7,7 @@ export async function load({ fetch }) {
 	const movieObj = await AJAX({ fetch }, pathname, pager);
 
 	let movies = movieObj.results;
-
+	pager++;
 	if (movies) {
 		return {
 			pager: movieObj.page,
