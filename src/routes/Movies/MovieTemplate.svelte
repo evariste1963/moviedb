@@ -38,7 +38,7 @@
 <style>
 	.pages {
 		display: flex;
-		margin-top: 4rem;
+		/*margin-top: 4rem;*/
 		text-align: center;
 		justify-content: center;
 	}

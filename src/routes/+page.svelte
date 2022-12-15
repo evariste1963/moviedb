@@ -3,7 +3,4 @@
 <h1>Home Page, welcome!</h1>
 
 <style>
-	* {
-		margin-top: 4rem;
-	}
 </style>
