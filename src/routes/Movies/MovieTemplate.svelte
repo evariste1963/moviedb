@@ -20,7 +20,7 @@
 		<!--<button on:click>NEXT</button> -->
 		<a href={$page.url.pathname} target="_self" data-sveltekit-prefetch class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href={$page.url.pathname} data-sveltekit-prefetch class="next" on:click>Next</a>
+		<a href="/Movies/next" data-sveltekit-prefetch class="next">Next</a>
 	</div>
 	<ul>
 		{#each movies as movie}
