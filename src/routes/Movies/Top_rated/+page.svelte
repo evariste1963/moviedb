@@ -3,9 +3,9 @@
 	//import AJAX from '../API';
 	export let data;
 	const { pathname, pager } = data;
-	const nextPage = () => {
+	/*const nextPage = () => {
 		console.log('the next page is:', pager + 1);
-	};
+	};*/
 </script>
 
-<MovieTemplate {data} on:click={nextPage} />
+<MovieTemplate {data} />

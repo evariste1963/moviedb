@@ -3,6 +3,7 @@ let pathname = 'popular';
 export let nextPage;
 
 let pager = 24;
+
 export async function load({ fetch }) {
 	const movieObj = await AJAX({ fetch }, pathname, pager);
 

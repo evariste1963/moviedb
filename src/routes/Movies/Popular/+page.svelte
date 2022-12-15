@@ -1,5 +1,6 @@
 <script>
 	import MovieTemplate from '../MovieTemplate.svelte';
+
 	import { page } from '$app/stores';
 	//import AJAX from '../API';
 
@@ -10,7 +11,7 @@
 	// create page & prev next functions here? __ or on +page.js??
 	export async function nextPage() {
 		console.log('the next page is:', pager + 1);
-		let urlref =
+		/*	let urlref =
 			'https://api.themoviedb.org/3/movie' +
 			$page.url.pathname.slice(7).toLowerCase() +
 			'?api_key=0e04b7df85fdc659ca268b3647959793&language=fr&page=' +
@@ -27,11 +28,12 @@
 			return {
 				data
 			};
-		}
+		}*/
 	}
 </script>
 
 <!-- {#key value}
 <MovieTemplate {data} on:click={nextPage} />
 {/key} -->
+
 <MovieTemplate {data} on:click={nextPage} />
