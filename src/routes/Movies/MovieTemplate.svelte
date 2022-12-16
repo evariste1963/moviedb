@@ -20,14 +20,14 @@
 <div class="section">
 	<div class="pages">
 		<!--<button on:click>NEXT</button> -->
-		<a href={$page.url.pathname} target="_self" data-sveltekit-prefetch class="prev">Prev</a>
+		<a href={$page.url.pathname} target="_self" data-sveltekit-preload-data class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href="/Movies/next" data-sveltekit-prefetch class="next">Next</a>
+		<a href="/Movies/next" data-sveltekit-preload-data class="next">Next</a>
 	</div>
 	<ul>
 		{#each movies as movie}
 			<Card>
-				<a href={`/Movies/${movie.id}`}>
+				<a href={`/Movies/${movie.id}`} data-sveltekit-preload-data>
 					<img src={`https:/image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
 				</a>
 				<h3>{movie.title}</h3>

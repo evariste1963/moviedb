@@ -12,8 +12,10 @@
 
 <navbar>
 	{#each nav as navitem}
-		<a href={navitem.path} class:active={$page.route.id === navitem.path} data-sveltekit-prefetch
-			>{navitem.title}</a
+		<a
+			href={navitem.path}
+			class:active={$page.route.id === navitem.path}
+			data-sveltekit-preload-data>{navitem.title}</a
 		>
 	{/each}
 </navbar>
