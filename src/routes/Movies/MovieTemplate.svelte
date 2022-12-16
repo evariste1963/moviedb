@@ -2,7 +2,7 @@
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
 
-	console.log($page.route);
+	console.log($page.route.id);
 	export let data;
 	const { movies, pager } = data;
 	// let urlref =
@@ -13,14 +13,14 @@
 
 	//let prev = pager - 1;
 	//let next = pager + 1;
-	console.log(movies, pager, $page.url.pathname.slice(7), '--data->', data);
+	console.log('this is some info: ', movies, pager, $page.route.id.slice(7), '--data->', data);
 </script>
 
 <!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!! maybe create a new page(s) for prev and next fetches and call them frrom the a refs bvelow-->
 <div class="section">
 	<div class="pages">
 		<!--<button on:click>NEXT</button> -->
-		<a href={$page.url.pathname} target="_self" data-sveltekit-preload-data class="prev">Prev</a>
+		<a href={$page.route.id} data-sveltekit-preload-data class="prev">Prev</a>
 		<p>{pager}</p>
 		<a href="/Movies/next" data-sveltekit-preload-data class="next">Next</a>
 	</div>

@@ -1,7 +1,7 @@
 <script>
 	export let data;
 	const { movie } = data;
-	console.log(movie);
+	//console.log(movie);
 	let year = movie.release_date.substr(0, 4);
 	let picture = movie.backdrop_path;
 	if (!movie.backdrop_path) {
