@@ -1,6 +1,8 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
+
+	console.log($page.route);
 	export let data;
 	const { movies, pager } = data;
 	// let urlref =

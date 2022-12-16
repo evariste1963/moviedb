@@ -1,11 +1,21 @@
 <script>
 	import '../../src/app.css';
+	import { page } from '$app/stores';
+	console.log($page.route);
+
+	const nav = [
+		{ title: 'Home', path: '/' },
+		{ title: 'Popular', path: '/Movies/popular' },
+		{ title: 'Top Rated', path: '/Movies/Top_rated' }
+	];
 </script>
 
 <navbar>
-	<a href="/">Home</a>
-	<a href="/Movies/popular" data-sveltekit-prefetch>Popular Movies</a>
-	<a href="/Movies/Top_rated" data-sveltekit-prefetch>Top Rated Movies</a>
+	{#each nav as navitem}
+		<a href={navitem.path} class:active={$page.route.id === navitem.path} data-sveltekit-prefetch
+			>{navitem.title}</a
+		>
+	{/each}
 </navbar>
 <slot />
 
@@ -38,5 +48,9 @@
 	navbar a:hover {
 		background-color: #ddd;
 		color: black;
+	}
+	.active {
+		color: black;
+		text-decoration: underline;
 	}
 </style>
