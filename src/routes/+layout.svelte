@@ -1,3 +1,7 @@
+<script>
+	import '../../src/app.css';
+</script>
+
 <navbar>
 	<a href="/">Home</a>
 	<a href="/Movies/popular" data-sveltekit-prefetch>Popular Movies</a>
@@ -13,7 +17,7 @@
 		justify-content: center;
 		background-color: rgba(238, 234, 234, 0.9); /* Black background color */
 		/*position: fixed; /* Make it stick/fixed */
-		/*top: 0; /* Stay on top */
+		top: 0; /* Stay on top */
 		/*width: 100%; /* Full width */
 		/*transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	}
