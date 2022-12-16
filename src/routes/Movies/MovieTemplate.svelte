@@ -61,6 +61,7 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		color: rgb(51, 50, 50);
+		padding: 0;
 	}
 
 	h3 {
