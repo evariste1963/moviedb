@@ -24,8 +24,8 @@
 <style>
 	navbar {
 		display: flex;
-		min-height: 10vh;
-		align-items: center;
+		min-height: 8vh;
+
 		justify-content: center;
 		/*background-color: rgba(245, 245, 245, 0.3); /* Black background color */
 		/*position: fixed; /* Make it stick/fixed */
@@ -43,16 +43,17 @@
 		color: #4f4343;
 		text-align: center;
 		padding: 2rem;
-		margin-right: 1rem;
+		margin: 1rem;
 		text-decoration: none;
 	}
 
 	navbar a:hover {
-		background-color: #ddd;
+		background-color: rgba(143, 96, 96, 0.2);
 		color: black;
 	}
 	.active {
-		color: black;
-		text-decoration: underline;
+		color: rgb(80, 15, 15);
+		text-decoration: none;
+		border: 1px solid rgb(80, 15, 15);
 	}
 </style>

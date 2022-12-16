@@ -38,6 +38,9 @@
 </div>
 
 <style>
+	.section {
+		margin: 0 1rem;
+	}
 	.pages {
 		display: flex;
 		/*margin-top: 4rem;*/

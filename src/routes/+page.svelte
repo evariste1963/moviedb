@@ -2,10 +2,13 @@
 <script>
 </script>
 
-<h1>Home Page, welcome!</h1>
+<section>
+	<h1>Home Page, welcome!</h1>
+</section>
 
 <style>
-	body {
+	section {
 		margin: 0 2rem;
+		text-align: center;
 	}
 </style>

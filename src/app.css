@@ -1,5 +1,7 @@
 body {
-    margin: 0 2rem;
+   margin: 0 ;
     background-color: rgb(247, 226, 200);
     font-family: cursive, poppins;
+    /*align-items: center;
+    justify-content: center;*/
 }
