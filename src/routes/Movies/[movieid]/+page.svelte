@@ -26,11 +26,13 @@
 		margin: 0.5rem;
 	}
 	section {
-		font-family: cursive;
 		margin-bottom: 2rem;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
 	}
 	.page {
-		width: 90%;
+		width: 100%;
 		height: fit-content;
 		text-align: center;
 		margin-top: 4rem;

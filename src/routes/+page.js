@@ -1,5 +1,1 @@
-<style>
-    * {
-        margin: 0;
-    }
-</style>
+import '../../src/app.css';

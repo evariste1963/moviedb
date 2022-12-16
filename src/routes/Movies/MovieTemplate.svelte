@@ -59,7 +59,6 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 		color: rgb(51, 50, 50);
-		font-family: cursive;
 	}
 
 	h3 {

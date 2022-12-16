@@ -15,7 +15,7 @@
 		min-height: 10vh;
 		align-items: center;
 		justify-content: center;
-		background-color: rgba(238, 234, 234, 0.9); /* Black background color */
+		/*background-color: rgba(245, 245, 245, 0.3); /* Black background color */
 		/*position: fixed; /* Make it stick/fixed */
 		top: 0; /* Stay on top */
 		/*width: 100%; /* Full width */
@@ -24,16 +24,15 @@
 	/* Style the navbar links */
 	navbar a {
 		font-size: 1.5rem;
-		font-family: bold;
+		font-weight: bold;
 
 		/*float: left;
 		display: block;*/
-		color: #272727;
+		color: #4f4343;
 		text-align: center;
 		padding: 2rem;
 		margin-right: 1rem;
 		text-decoration: none;
-		font-family: cursive, poppins;
 	}
 
 	navbar a:hover {
