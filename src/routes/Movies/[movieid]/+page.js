@@ -6,7 +6,7 @@ export async function load({ fetch, params }) {
 		`https://api.themoviedb.org/3/movie/${params.movieid}?api_key=${API_KEY}&language=fr&page=1`
 	);
 	let movie = await res.json();
-	console.log('movie', movie);
+	//console.log('movie', movie);
 	if (movie) {
 		return {
 			movie
