@@ -4,7 +4,8 @@
 
 	console.log($page.route.id);
 	export let data;
-	const { movies, pager } = data;
+	const { movies, pager, nextpage } = data;
+	console.log(' DATA : ', data);
 	// let urlref =
 	// 	'https://api.themoviedb.org/3/movie' +
 	// 	$page.url.pathname.slice(7) +
@@ -13,10 +14,17 @@
 
 	//let prev = pager - 1;
 	//let next = pager + 1;
-	console.log('this is some info: ', movies, pager, $page.route.id.slice(7), '--data->', data);
+	console.log(
+		'this is some info: ',
+		movies,
+		'PAGER :',
+		pager,
+
+		'--data->',
+		data
+	);
 </script>
 
-<!--below will not work because it's not the same as the movie links as these have already been downloaded from the nav liks -- new fetch is required!! maybe create a new page(s) for prev and next fetches and call them frrom the a refs bvelow-->
 <div class="section">
 	<div class="pages">
 		<!--<button on:click>NEXT</button> -->
