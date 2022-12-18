@@ -36,4 +36,4 @@
 <MovieTemplate {data} on:click={nextPage} />
 {/key} -->
 
-<MovieTemplate {data} on:click={nextPage} />
+<MovieTemplate {data} />

@@ -1,7 +1,7 @@
 <script>
-	import { page } from '$app/stores';
+	import MovieTemplate from '../../MovieTemplate.svelte';
 
-	console.log($page.url.pathname);
+	export let data;
 </script>
 
-<h1>this is the next page</h1>
+<MovieTemplate {data} />

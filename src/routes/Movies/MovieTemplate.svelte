@@ -22,7 +22,7 @@
 		<!--<button on:click>NEXT</button> -->
 		<a href={$page.route.id} data-sveltekit-preload-data class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href="/Movies/next" data-sveltekit-preload-data class="next">Next</a>
+		<a href={`/Movies/popular/${pager + 1}`} data-sveltekit-preload-data class="next">Next</a>
 	</div>
 	<ul>
 		{#each movies as movie}
