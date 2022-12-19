@@ -10,8 +10,11 @@
 	<div class="pages">
 		<a href={$page.route.id} data-sveltekit-preload-data class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href={`/Movies/popular/${pager + 1}`} target="_self" data-sveltekit-preload-data class="next"
-			>Next</a
+		<a
+			href={`/Movies/popular/${pager + 1}`}
+			target={pager < 3 ? '_self' : ''}
+			data-sveltekit-preload-data
+			class="next">Next</a
 		>
 	</div>
 	<ul>

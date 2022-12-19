@@ -23,7 +23,9 @@ export async function load({ fetch, params }) {
 }
 */
 import AJAX from '../../API.js';
+
 export const csr = false;
+export const ssr = true;
 let pathname = 'popular';
 export let pager;
 

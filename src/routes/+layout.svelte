@@ -1,7 +1,7 @@
 <script>
 	import '../../src/app.css';
 	import { page } from '$app/stores';
-	//console.log($page.route);
+	console.log($page.route);
 
 	const nav = [
 		{ title: 'Home', path: '/' },
