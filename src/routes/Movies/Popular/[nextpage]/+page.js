@@ -12,7 +12,9 @@ export async function load({ fetch, params }) {
 		`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=fr&page=${nextpage}`
 	);
 	let results = await res.json();
+	//console.log('results', results.results);
 	let movies = results.results;
+	//console.log('movies', movies);
 	pager = +nextpage;
 	if (movies) {
 		return {

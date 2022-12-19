@@ -1,5 +1,5 @@
 import AJAX from '../API.js';
-export const csr = false;
+//export const csr = false;
 let pathname = 'popular';
 
 let pager = 1;
@@ -11,7 +11,7 @@ export async function load({ fetch }) {
 
 	if (movies) {
 		return {
-			pager: movieObj.page,
+			pager,
 			movies,
 			pathname
 		};
