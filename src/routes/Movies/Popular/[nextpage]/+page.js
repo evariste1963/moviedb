@@ -1,6 +1,6 @@
 //import AJAX from '../../API';
 let API_KEY = '0e04b7df85fdc659ca268b3647959793';
-//export const csr = false;
+export const csr = false;
 //export const router = false;
 export let pager;
 // console.log('PPPPAGER', pager);
