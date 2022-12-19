@@ -2,35 +2,17 @@
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
 
-	//console.log($page.route.id);
 	export let data;
 	const { movies, pager, nextpage } = data;
-	//console.log(' DATA : ', data);
-	// let urlref =
-	// 	'https://api.themoviedb.org/3/movie' +
-	// 	$page.url.pathname.slice(7) +
-	// 	'?api_key=0e04b7df85fdc659ca268b3647959793&language=fr&page=' +
-	// 	(pager + 4);
-
-	//let prev = pager - 1;
-	//let next = pager + 1;
-	/*console.log(
-		'this is some info: ',
-		movies,
-		'PAGER :',
-		pager,
-
-		'--data->',
-		data
-	);*/
 </script>
 
 <div class="section">
 	<div class="pages">
-		<!--<button on:click>NEXT</button> -->
 		<a href={$page.route.id} data-sveltekit-preload-data class="prev">Prev</a>
 		<p>{pager}</p>
-		<a href={`/Movies/popular/${pager + 1}`} data-sveltekit-preload-data class="next">Next</a>
+		<a href={`/Movies/popular/${pager + 1}`} target="_self" data-sveltekit-preload-data class="next"
+			>Next</a
+		>
 	</div>
 	<ul>
 		{#each movies as movie}
