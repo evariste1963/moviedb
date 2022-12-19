@@ -8,8 +8,8 @@ let pathname = 'popular';
 
 export async function load({ fetch, params }) {
 	let { nextpage } = params;
+	currentPage = nextpage;
 	const movieObj = await AJAX({ fetch }, pathname, currentPage);
-
 	let movies = movieObj.results;
 	currentPage = +nextpage;
 

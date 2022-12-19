@@ -8,12 +8,16 @@
 
 <div class="section">
 	<div class="pages">
-		<a
-			href={`/Movies/${pathname}/${currentPage - 1}`}
-			target={currentPage < 3 ? '_self' : ''}
-			data-sveltekit-preload-data
-			class="prev">Prev</a
-		>
+		{#if currentPage > 1}
+			<a
+				href={`/Movies/${pathname}/${currentPage - 1}`}
+				target={currentPage < 3 ? '_self' : ''}
+				data-sveltekit-preload-data
+				class="prev">Prev</a
+			>
+		{:else}
+			<p class="pageLinkIdle">Prev</p>
+		{/if}
 		<p class="currentPage">{currentPage}</p>
 		<a
 			href={`/Movies/${pathname}/${currentPage + 1}`}
@@ -48,12 +52,16 @@
 	}
 
 	.pages .prev,
-	.pages .next {
+	.pages .next,
+	.pageLinkIdle {
 		padding: 0.8rem;
 		margin: 0 2rem;
 		padding: 0;
 		text-decoration: none;
 		color: rgb(52, 50, 50);
+	}
+	.pageLinkIdle {
+		color: rgb(168, 164, 164);
 	}
 
 	.currentPage {

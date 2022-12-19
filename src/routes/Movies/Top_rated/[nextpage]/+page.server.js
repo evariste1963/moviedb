@@ -8,6 +8,7 @@ let pathname = 'top_rated';
 
 export async function load({ fetch, params }) {
 	let { nextpage } = params;
+	currentPage = nextpage;
 	const movieObj = await AJAX({ fetch }, pathname, currentPage);
 
 	let movies = movieObj.results;
