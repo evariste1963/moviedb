@@ -6,7 +6,7 @@
 	const nav = [
 		{ title: 'Home', path: '/' },
 		{ title: 'Popular', path: '/Movies/popular' },
-		{ title: 'Top Rated', path: '/Movies/Top_rated' }
+		{ title: 'Top Rated', path: '/Movies/top_rated' }
 	];
 </script>
 

@@ -2,7 +2,7 @@ import AJAX from '../../API.js';
 
 export const csr = false;
 export const ssr = true;
-let pathname = 'popular';
+let pathname = 'top_rated';
 export let pager;
 
 export async function load({ fetch, params }) {
