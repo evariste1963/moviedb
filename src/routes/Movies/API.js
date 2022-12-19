@@ -1,6 +1,7 @@
 let API_KEY = '0e04b7df85fdc659ca268b3647959793';
 
 const AJAX = async function ({ fetch }, pathname, pager) {
+	console.log(pathname, pager);
 	const res = await fetch(
 		`https://api.themoviedb.org/3/movie/${pathname}?api_key=${API_KEY}&language=fr&page=${pager}`
 	);
