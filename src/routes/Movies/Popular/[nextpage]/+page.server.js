@@ -10,15 +10,17 @@ export async function load({ fetch, params }) {
 	let { nextpage } = params;
 	currentPage = nextpage;
 	const movieObj = await AJAX({ fetch }, pathname, currentPage);
+	let { total_pages } = movieObj;
 	let movies = movieObj.results;
 	currentPage = +nextpage;
-
+	
 	if (movies) {
 		return {
 			movies,
 			nextpage,
 			currentPage,
-			pathname
+			pathname,
+			total_pages
 		};
 	}
 }

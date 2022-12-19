@@ -3,7 +3,8 @@
 	import { page } from '$app/stores';
 
 	export let data;
-	const { movies, currentPage, pathname } = data;
+	const { movies, currentPage, pathname, total_pages } = data;
+	console.log(currentPage);
 </script>
 
 <div class="section">
@@ -19,12 +20,16 @@
 			<p class="pageLinkIdle">Prev</p>
 		{/if}
 		<p class="currentPage">{currentPage}</p>
-		<a
-			href={`/Movies/${pathname}/${currentPage + 1}`}
-			target={currentPage < 3 ? '_self' : ''}
-			data-sveltekit-preload-data
-			class="next">Next</a
-		>
+		{#if currentPage == undefined || currentPage < 500}
+			<a
+				href={`/Movies/${pathname}/${currentPage + 1}`}
+				target={currentPage < 3 ? '_self' : ''}
+				data-sveltekit-preload-data
+				class="next">Next</a
+			>
+		{:else}
+			<p class="pageLinkIdle">Next</p>
+		{/if}
 	</div>
 	<ul>
 		{#each movies as movie}
