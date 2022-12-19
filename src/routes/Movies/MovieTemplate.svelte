@@ -8,7 +8,12 @@
 
 <div class="section">
 	<div class="pages">
-		<a href={$page.route.id} data-sveltekit-preload-data class="prev">Prev</a>
+		<a
+			href={`/Movies/${pathname}/${currentPage - 1}`}
+			target={currentPage < 3 ? '_self' : ''}
+			data-sveltekit-preload-data
+			class="prev">Prev</a
+		>
 		<p>{currentPage}</p>
 		<a
 			href={`/Movies/${pathname}/${currentPage + 1}`}
