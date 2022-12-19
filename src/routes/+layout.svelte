@@ -36,7 +36,7 @@
 	navbar a {
 		font-size: 1.5rem;
 		font-weight: bold;
-
+		width: 10rem;
 		/*float: left;
 		display: block;*/
 		color: #4f4343;

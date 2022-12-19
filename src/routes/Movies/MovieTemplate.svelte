@@ -14,7 +14,7 @@
 			data-sveltekit-preload-data
 			class="prev">Prev</a
 		>
-		<p>{currentPage}</p>
+		<p class="currentPage">{currentPage}</p>
 		<a
 			href={`/Movies/${pathname}/${currentPage + 1}`}
 			target={currentPage < 3 ? '_self' : ''}
@@ -44,20 +44,23 @@
 		/*margin-top: 4rem;*/
 		text-align: center;
 		justify-content: center;
+		align-items: center;
 	}
 
 	.pages .prev,
 	.pages .next {
 		padding: 0.8rem;
 		margin: 0 2rem;
-	}
-	.prev {
-		border-radius: 50% 0 0 50%;
+		padding: 0;
+		text-decoration: none;
+		color: rgb(52, 50, 50);
 	}
 
-	.next {
-		border-radius: 0 50% 50% 0;
+	.currentPage {
+		font-size: 3rem;
+		margin: 0;
 	}
+
 	ul {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
