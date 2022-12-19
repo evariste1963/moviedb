@@ -6,7 +6,8 @@ export let pager;
 // console.log('PPPPAGER', pager);
 export async function load({ fetch, params }) {
 	let { nextpage } = params;
-	console.log('paramsid', params.nextpage, 'PARAMS', params);
+	console.log('fetching?');
+	//console.log('paramsid', params.nextpage, 'PARAMS', params);
 	let res = await fetch(
 		`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=fr&page=${nextpage}`
 	);

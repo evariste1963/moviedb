@@ -2,10 +2,10 @@
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
 
-	console.log($page.route.id);
+	//console.log($page.route.id);
 	export let data;
 	const { movies, pager, nextpage } = data;
-	console.log(' DATA : ', data);
+	//console.log(' DATA : ', data);
 	// let urlref =
 	// 	'https://api.themoviedb.org/3/movie' +
 	// 	$page.url.pathname.slice(7) +
@@ -14,7 +14,7 @@
 
 	//let prev = pager - 1;
 	//let next = pager + 1;
-	console.log(
+	/*console.log(
 		'this is some info: ',
 		movies,
 		'PAGER :',
@@ -22,7 +22,7 @@
 
 		'--data->',
 		data
-	);
+	);*/
 </script>
 
 <div class="section">
