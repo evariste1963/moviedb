@@ -3,19 +3,16 @@
 	import { page } from '$app/stores';
 
 	export let data;
-	const { movies, pager, pathname } = data;
-
-	let genre = $page.route.id.slice(8);
-	console.log('thus is the pathname', pathname);
+	const { movies, currentPage, pathname } = data;
 </script>
 
 <div class="section">
 	<div class="pages">
 		<a href={$page.route.id} data-sveltekit-preload-data class="prev">Prev</a>
-		<p>{pager}</p>
+		<p>{currentPage}</p>
 		<a
-			href={`/Movies/${pathname}/${pager + 1}`}
-			target={pager < 3 ? '_self' : ''}
+			href={`/Movies/${pathname}/${currentPage + 1}`}
+			target={currentPage < 3 ? '_self' : ''}
 			data-sveltekit-preload-data
 			class="next">Next</a
 		>

@@ -2,21 +2,22 @@ import AJAX from '../../API.js';
 
 export const csr = false;
 export const ssr = true;
+export let currentPage;
+
 let pathname = 'popular';
-export let pager;
 
 export async function load({ fetch, params }) {
 	let { nextpage } = params;
-	const movieObj = await AJAX({ fetch }, pathname, pager);
+	const movieObj = await AJAX({ fetch }, pathname, currentPage);
 
 	let movies = movieObj.results;
-	pager = +nextpage;
+	currentPage = +nextpage;
 
 	if (movies) {
 		return {
 			movies,
 			nextpage,
-			pager,
+			currentPage,
 			pathname
 		};
 	}
