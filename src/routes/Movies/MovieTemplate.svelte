@@ -1,10 +1,8 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
-	import { page } from '$app/stores';
 
 	export let data;
-	const { movies, currentPage, pathname, total_pages } = data;
-	console.log(currentPage);
+	const { movies, currentPage, pathname } = data;
 </script>
 
 <div class="section">

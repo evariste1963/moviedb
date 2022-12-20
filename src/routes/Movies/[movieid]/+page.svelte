@@ -84,9 +84,8 @@
 		outline: var(--b) solid #0000;
 		outline-offset: 0.6em;
 		font-size: 16px;
-
+		cursor: pointer;
 		border: 0;
-
 		user-select: none;
 		-webkit-user-select: none;
 		touch-action: manipulation;
