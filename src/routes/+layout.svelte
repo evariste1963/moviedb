@@ -24,21 +24,14 @@
 	navbar {
 		display: flex;
 		min-height: 4vh;
-
 		justify-content: center;
-		/*background-color: rgba(245, 245, 245, 0.3); /* Black background color */
-		/*position: fixed; /* Make it stick/fixed */
 		top: 0; /* Stay on top */
-		/*width: 100%; /* Full width */
-		/*transition: top 0.3s; /* Transition effect when sliding down (and up) */
 	}
-	/* Style the navbar links */
+
 	navbar a {
 		font-size: 1.5rem;
 		font-weight: bold;
 		width: 10rem;
-		/*float: left;
-		display: block;*/
 		color: #4f4343;
 		text-align: center;
 		padding: 2rem;

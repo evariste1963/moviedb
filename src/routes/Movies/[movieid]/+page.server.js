@@ -3,12 +3,11 @@
 let API_KEY = '0e04b7df85fdc659ca268b3647959793';
 
 export async function load({ fetch, params }) {
-	console.log('paramsid', params.movieid);
 	let res = await fetch(
 		`https://api.themoviedb.org/3/movie/${params.movieid}?api_key=${API_KEY}&language=fr&page=1`
 	);
 	let movie = await res.json();
-	console.log('movie', movie);
+
 	if (movie) {
 		return {
 			movie
