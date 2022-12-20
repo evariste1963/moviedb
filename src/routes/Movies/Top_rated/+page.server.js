@@ -13,7 +13,6 @@ export async function load({ fetch }) {
 		return {
 			currentPage: movieObj.page,
 			movies,
-			pathname,
 			nextPage
 		};
 	}

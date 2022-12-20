@@ -1,5 +1,6 @@
 <script>
 	export let data;
+	console.log(data);
 	const { movie } = data;
 
 	let year = movie.release_date.substr(0, 4);

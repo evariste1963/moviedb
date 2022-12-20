@@ -1,15 +1,17 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
-
+	import { page } from '$app/stores';
 	export let data;
-	const { movies, currentPage, pathname } = data;
+	const { movies, currentPage } = data;
+	let pathRoute = `/${$page.url.pathname.split('/')[1]}/${$page.url.pathname.split('/')[2]}`;
+	console.log(pathRoute);
 </script>
 
 <div class="section">
 	<div class="pages">
 		{#if currentPage > 1}
 			<a
-				href={`/Movies/${pathname}/${currentPage - 1}`}
+				href={`${pathRoute}/${currentPage - 1}`}
 				target={currentPage < 3 ? '_self' : ''}
 				data-sveltekit-preload-data
 				class="prev">Prev</a
@@ -20,7 +22,7 @@
 		<p class="currentPage">{currentPage}</p>
 		{#if currentPage == undefined || currentPage < 500}
 			<a
-				href={`/Movies/${pathname}/${currentPage + 1}`}
+				href={`${pathRoute}/${currentPage + 1}`}
 				target={currentPage < 3 ? '_self' : ''}
 				data-sveltekit-preload-data
 				class="next">Next</a
