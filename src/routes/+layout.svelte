@@ -14,6 +14,7 @@
 		<a
 			href={navitem.path}
 			class:active={$page.route.id === navitem.path}
+			class="button-89"
 			data-sveltekit-preload-data>{navitem.title}</a
 		>
 	{/each}
@@ -29,23 +30,23 @@
 	}
 
 	navbar a {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		font-weight: bold;
-		width: 10rem;
-		color: #4f4343;
+		width: 15rem;
+		/* color: #4f4343; */
 		text-align: center;
 		padding: 2rem;
 		margin: 1rem;
 		text-decoration: none;
 	}
 
-	navbar a:hover {
+	/* navbar a:hover {
 		background-color: rgba(143, 96, 96, 0.2);
 		color: black;
-	}
+	} */
 	.active {
 		color: rgb(80, 15, 15);
 		text-decoration: none;
-		border: 1px solid rgb(80, 15, 15);
+		/*border: 1px solid rgb(80, 15, 15);*/
 	}
 </style>

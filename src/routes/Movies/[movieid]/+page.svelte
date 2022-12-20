@@ -14,7 +14,7 @@
 	<button class="button-89" on:click={() => history.back()}>BACK</button>
 	<h1 class="heading">{movie.title}</h1>
 	<h2 class="tagline">{movie.tagline}</h2>
-	<h2>{year} - {movie.runtime} mins</h2>
+	<h2 class="runtime">{year} - {movie.runtime} mins</h2>
 	<div class="image">
 		<img src={`https:/image.tmdb.org/t/p/original/${picture}`} alt={movie.title} />
 	</div>
@@ -47,6 +47,10 @@
 	.tagline {
 		font-style: italic;
 	}
+
+	.runtime {
+		color: rgb(73, 71, 71);
+	}
 	.image {
 		width: 100%;
 		height: auto;
@@ -56,7 +60,7 @@
 	}
 
 	img {
-		width: 80%;
+		width: 50%;
 		height: auto;
 		margin-left: auto;
 		margin-right: auto;
@@ -66,41 +70,7 @@
 		text-align: justify;
 		margin-left: auto;
 		margin-right: auto;
-		width: 80%;
-	}
-
-	/* button by Temani Afif --> with thanks */
-	.button-89 {
-		--b: 3px;
-		--s: 0.45em;
-		--color: #373b44;
-
-		padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
-		color: var(--color);
-		--_p: var(--s);
-		background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0)
-			var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
-			calc(100% - var(--b) - 2 * var(--_p));
-		transition: 0.3s linear, color 0s, background-color 0s;
-		outline: var(--b) solid #0000;
-		outline-offset: 0.6em;
-		font-size: 16px;
-		cursor: pointer;
-		border: 0;
-		user-select: none;
-		-webkit-user-select: none;
-		touch-action: manipulation;
-	}
-
-	.button-89:hover,
-	.button-89:focus-visible {
-		--_p: 0px;
-		outline-color: var(--color);
-		outline-offset: 0.05em;
-	}
-
-	.button-89:active {
-		background: var(--color);
-		color: #fff;
+		width: 50%;
+		font-size: 1.25rem;
 	}
 </style>

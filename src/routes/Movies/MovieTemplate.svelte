@@ -9,12 +9,16 @@
 
 <div class="section">
 	<div class="pages">
+		<!-- <form class="search">
+			<button>Search</button>
+		</form> -->
+
 		{#if currentPage > 1}
 			<a
 				href={`${pathRoute}/${currentPage - 1}`}
 				target={currentPage < 3 ? '_self' : ''}
 				data-sveltekit-preload-data
-				class="prev">Prev</a
+				class="button-89">Prev</a
 			>
 		{:else}
 			<p class="pageLinkIdle">Prev</p>
@@ -25,7 +29,7 @@
 				href={`${pathRoute}/${currentPage + 1}`}
 				target={currentPage < 3 ? '_self' : ''}
 				data-sveltekit-preload-data
-				class="next">Next</a
+				class="button-89">Next</a
 			>
 		{:else}
 			<p class="pageLinkIdle">Next</p>
@@ -45,9 +49,9 @@
 </div>
 
 <style>
-	.section {
+	/* .section {
 		margin: 0 1rem;
-	}
+	} */
 	.pages {
 		display: flex;
 		/*margin-top: 4rem;*/
@@ -56,8 +60,6 @@
 		align-items: center;
 	}
 
-	.pages .prev,
-	.pages .next,
 	.pageLinkIdle {
 		padding: 0.8rem;
 		margin: 0 2rem;
@@ -65,6 +67,9 @@
 		text-decoration: none;
 		color: rgb(52, 50, 50);
 	}
+
+	
+
 	.pageLinkIdle {
 		color: rgb(168, 164, 164);
 	}
