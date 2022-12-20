@@ -23,7 +23,7 @@
 <style>
 	navbar {
 		display: flex;
-		min-height: 8vh;
+		min-height: 4vh;
 
 		justify-content: center;
 		/*background-color: rgba(245, 245, 245, 0.3); /* Black background color */
