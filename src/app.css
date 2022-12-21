@@ -1,3 +1,6 @@
+*{
+	font-family:Ink free, cursive, sans-serif;
+}
 body {
 	margin: 0 auto;
 	top:0;
@@ -6,7 +9,6 @@ body {
 	text-align: center;
 	background-color: rgb(247, 226, 200);
 
-	font-family: cursive, poppins;
 	/*align-items: center;
     justify-content: center;*/
 }
@@ -40,13 +42,13 @@ body {
 }
 
 .button-89:hover,
-.button-89:focus-visible {
+.button-89:focus-visible{
 	--_p: 0px;
 	outline-color: var(--color);
 	outline-offset: 0.05em;
 }
 
-.button-89:active {
+.button-89:active{
 	background: var(--color);
 	color: #fff;
 }

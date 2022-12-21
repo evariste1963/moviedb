@@ -9,31 +9,34 @@
 
 <div class="section">
 	<div class="pages">
-		<!-- <form class="search">
-			<button>Search</button>
-		</form> -->
-
-		{#if currentPage > 1}
-			<a
-				href={`${pathRoute}/${currentPage - 1}`}
-				target={currentPage < 3 ? '_self' : ''}
-				data-sveltekit-preload-data
-				class="button-89">Prev</a
+		<form class="searchbar">
+			<input type="search" placeholder="search for movie" name="search" /><button type="submit"
+				>Search</button
 			>
-		{:else}
-			<p class="pageLinkIdle">Prev</p>
-		{/if}
-		<p class="currentPage">{currentPage}</p>
-		{#if currentPage == undefined || currentPage < 500}
-			<a
-				href={`${pathRoute}/${currentPage + 1}`}
-				target={currentPage < 3 ? '_self' : ''}
-				data-sveltekit-preload-data
-				class="button-89">Next</a
-			>
-		{:else}
-			<p class="pageLinkIdle">Next</p>
-		{/if}
+		</form>
+		<div class="movie-bar">
+			{#if currentPage > 1}
+				<a
+					href={`${pathRoute}/${currentPage - 1}`}
+					target={currentPage < 3 ? '_self' : ''}
+					data-sveltekit-preload-data
+					class="button-89">Prev</a
+				>
+			{:else}
+				<p class="pageLinkIdle">Prev</p>
+			{/if}
+			<p class="currentPage">{currentPage}</p>
+			{#if currentPage == undefined || currentPage < 500}
+				<a
+					href={`${pathRoute}/${currentPage + 1}`}
+					target={currentPage < 3 ? '_self' : ''}
+					data-sveltekit-preload-data
+					class="button-89">Next</a
+				>
+			{:else}
+				<p class="pageLinkIdle">Next</p>
+			{/if}
+		</div>
 	</div>
 	<ul>
 		{#each movies as movie}
@@ -53,10 +56,61 @@
 		margin: 0 1rem;
 	} */
 	.pages {
+		width: 100%;
 		display: flex;
+		margin: 0.5rem auto;
 		/*margin-top: 4rem;*/
 		text-align: center;
 		justify-content: center;
+		align-items: center;
+	}
+
+	.searchbar {
+		margin-left: 1rem;
+	}
+
+	.searchbar input,
+	.searchbar button {
+		--b: 3px;
+		--s: 0.45em;
+		--color: #2b2f36;
+		margin-left: 0.5rem;
+		text-decoration: none;
+		padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
+		color: var(--color);
+		--_p: var(--s);
+		background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0)
+			var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+			calc(100% - var(--b) - 2 * var(--_p));
+		transition: 0.3s linear, color 0s, background-color 0s;
+		outline: var(--b) solid rgba(0, 0, 0, 0);
+		outline-offset: 0.6em;
+		font-size: 16px;
+		cursor: pointer;
+		border: 0;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+	}
+
+	.searchbar input:hover,
+	.searchbar input:focus,
+	.searchbar button:hover,
+	.searchbar button:focus-visible {
+		--_p: 0px;
+		outline-color: var(--color);
+		outline-offset: 0.05em;
+	}
+
+	.searchbar button:active {
+		background: var(--color);
+		color: #fff;
+	}
+
+	.movie-bar {
+		display: flex;
+		margin: 0 0 0 auto;
+		/*justify-content: center;*/
 		align-items: center;
 	}
 
@@ -67,8 +121,6 @@
 		text-decoration: none;
 		color: rgb(52, 50, 50);
 	}
-
-	
 
 	.pageLinkIdle {
 		color: rgb(168, 164, 164);
