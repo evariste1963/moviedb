@@ -21,7 +21,9 @@
 </navbar>
 <slot />
 <footer>
-	<p class="footer button-89">coded by <span class="this-me">this.me</span></p>
+	<div class="myTag">
+		<p class="footer button-89">coded by <span class="this-me">this.me</span></p>
+	</div>
 </footer>
 
 <style>
@@ -54,16 +56,19 @@
 	}
 
 	footer {
-		margin-top: 2rem 0.5rem;
-		margin-left: auto;
-		margin-right: auto;
-		bottom: 0;
-		width: 50%;
+		/*position: fixed;*/
+		margin: 1rem auto;
+		/*bottom: 0;*/
+		width: 100%;
 		text-align: center;
 		color: black;
 		font-weight: bolder;
 		font-style: italic;
 		font-family: Ink free, cursive, sans-serif;
+	}
+	.myTag {
+		width: 50%;
+		margin: 0 auto;
 	}
 
 	.this-me {
