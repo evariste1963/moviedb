@@ -1,5 +1,5 @@
 <script>
-	import MovieTemplate from '../MovieTemplate.svelte';
+	import MovieTemplate from '$lib/shared/MovieTemplate.svelte';
 
 	export let data;
 </script>

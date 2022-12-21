@@ -1,10 +1,11 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
+
 	export let data;
+
 	const { movies, currentPage } = data;
 	let pathRoute = `/${$page.url.pathname.split('/')[1]}/${$page.url.pathname.split('/')[2]}`;
-	console.log(pathRoute);
 </script>
 
 <div class="section">
