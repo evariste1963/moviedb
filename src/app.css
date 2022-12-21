@@ -1,9 +1,10 @@
-*{
-	font-family:Ink free, cursive, sans-serif;
+* {
+	font-family: Ink free, cursive, sans-serif;
 }
+
 body {
 	margin: 0 auto;
-	top:0;
+	top: 0;
 	max-width: 90%;
 	height: 100%;
 	text-align: center;
@@ -17,7 +18,7 @@ body {
 .section {
 	width: 75%;
 	margin: 0 auto 4rem auto;
-	}
+}
 
 /* button by Temani Afif --> with thanks */
 .button-89 {
@@ -27,7 +28,7 @@ body {
 	margin: 0 4rem;
 	text-decoration: none;
 	padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
-	color: var(--color);
+	/*color: var(--color);*/
 	--_p: var(--s);
 	background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0) var(--_p)
 		var(--_p) / calc(100% - var(--b) - 2 * var(--_p)) calc(100% - var(--b) - 2 * var(--_p));
@@ -43,13 +44,13 @@ body {
 }
 
 .button-89:hover,
-.button-89:focus-visible{
+.button-89:focus-visible {
 	--_p: 0px;
 	outline-color: var(--color);
 	outline-offset: 0.05em;
 }
 
-.button-89:active{
+.button-89:active {
 	background: var(--color);
 	color: #fff;
 }

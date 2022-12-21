@@ -60,14 +60,14 @@
 		width: 100%;
 		display: flex;
 		margin: 0.5rem auto;
-		/*margin-top: 4rem;*/
+		color: #000;
 		text-align: center;
 		justify-content: center;
 		align-items: center;
 	}
 
 	.searchbar {
-		margin-left: 1rem;
+		margin-left: 4em;
 	}
 
 	.searchbar input,
@@ -75,10 +75,9 @@
 		--b: 3px;
 		--s: 0.45em;
 		--color: #2b2f36;
-		margin-left: 0.5rem;
+		margin-right: 0.5rem;
 		text-decoration: none;
 		padding: calc(0.5em + var(--s)) calc(0.9em + var(--s));
-		color: var(--color);
 		--_p: var(--s);
 		background: conic-gradient(from 90deg at var(--b) var(--b), #0000 90deg, var(--color) 0)
 			var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
@@ -111,7 +110,6 @@
 	.movie-bar {
 		display: flex;
 		margin: 0 0 0 auto;
-		/*justify-content: center;*/
 		align-items: center;
 	}
 
@@ -120,10 +118,6 @@
 		margin: 0 2rem;
 		padding: 0;
 		text-decoration: none;
-		color: rgb(52, 50, 50);
-	}
-
-	.pageLinkIdle {
 		color: rgb(168, 164, 164);
 	}
 
