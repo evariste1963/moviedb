@@ -20,6 +20,9 @@
 	{/each}
 </navbar>
 <slot />
+<footer>
+	<p class="footer button-89">coded by <span class="this-me">this.me</span></p>
+</footer>
 
 <style>
 	navbar {
@@ -48,5 +51,24 @@
 		color: rgb(80, 15, 15);
 		text-decoration: none;
 		/*border: 1px solid rgb(80, 15, 15);*/
+	}
+
+	footer {
+		margin-top: 2rem 0.5rem;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 0;
+		width: 50%;
+		text-align: center;
+		color: black;
+		font-weight: bolder;
+		font-style: italic;
+		font-family: Ink free, cursive, sans-serif;
+	}
+
+	.this-me {
+		color: rgb(46, 10, 80);
+		font-size: 1.5rem;
+		font-weight: bold;
 	}
 </style>
