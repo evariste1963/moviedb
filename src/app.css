@@ -4,11 +4,12 @@
 body {
 	margin: 0 auto;
 	top:0;
-	max-width: 100%;
+	max-width: 90%;
 	height: 100%;
 	text-align: center;
 	background-color: rgb(247, 226, 200);
-
+	border-left: 3px solid #373b44;
+	border-right: 3px solid #373b44;
 	/*align-items: center;
     justify-content: center;*/
 }

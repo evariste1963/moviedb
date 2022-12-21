@@ -58,8 +58,8 @@
 	footer {
 		/*position: fixed;*/
 		margin: 1rem auto;
-		/*bottom: 0;*/
-		width: 100%;
+		bottom: 1rem;
+		width: 80%;
 		text-align: center;
 		color: black;
 		font-weight: bolder;
