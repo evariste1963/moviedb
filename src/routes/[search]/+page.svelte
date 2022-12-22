@@ -5,4 +5,3 @@
 </script>
 
 <MovieTemplate {data} />
-<h1>hi searcher</h1>

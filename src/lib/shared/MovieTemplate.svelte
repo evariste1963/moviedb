@@ -1,7 +1,7 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
-
+	import SearchMovies from '$lib/shared/SearchMovies.svelte';
 	export let data;
 
 	const { movies, currentPage } = data;
@@ -10,11 +10,12 @@
 
 <div class="section">
 	<div class="pages">
-		<form class="searchbar">
+		<SearchMovies />
+		<!-- <form class="searchbar">
 			<input type="search" placeholder="search for movie" name="search" /><button type="submit"
 				>Search</button
 			>
-		</form>
+		</form>-->
 		<div class="movie-bar">
 			{#if currentPage > 1}
 				<a
@@ -65,7 +66,7 @@
 		justify-content: center;
 		align-items: center;
 	}
-
+	/*
 	.searchbar {
 		margin-left: 4em;
 	}
@@ -105,7 +106,7 @@
 	.searchbar button:active {
 		background: var(--color);
 		color: #fff;
-	}
+	}*/
 
 	.movie-bar {
 		display: flex;
