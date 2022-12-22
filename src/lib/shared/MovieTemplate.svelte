@@ -10,8 +10,8 @@
 
 <div class="section">
 	<div class="pages">
-		<SearchMovies />
-		<!-- <form class="searchbar">
+		<!-- <SearchMovies />
+	 <form class="searchbar">
 			<input type="search" placeholder="search for movie" name="search" /><button type="submit"
 				>Search</button
 			>
