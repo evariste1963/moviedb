@@ -21,10 +21,6 @@
 </form>
 
 <style>
-	.searchbar {
-		margin-left: 4em;
-	}
-
 	.searchbar input,
 	.searchbar button {
 		--b: 3px;
@@ -46,6 +42,15 @@
 		user-select: none;
 		-webkit-user-select: none;
 		touch-action: manipulation;
+	}
+
+	.searchbar {
+		width: 50%;
+		margin: 0 auto;
+	}
+	.searchbar input {
+		width: 50%;
+		margin: 0 auto;
 	}
 
 	.searchbar input:hover,
