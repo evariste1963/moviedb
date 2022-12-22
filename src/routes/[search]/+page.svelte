@@ -1,8 +1,8 @@
 <script>
-	// import MovieTemplate from '&lib/shared/MovieTemplate.svelte';
-	export let text = 'hi there searchers!'; //just for testing purposes only
+	import MovieTemplate from '$lib/shared/MovieTemplate.svelte';
+
+	export let data;
 </script>
 
-<!-- <MovieTemplate  {data}/> -->
-
-<h1>{text}</h1>
+<MovieTemplate {data} />
+<h1>hi searcher</h1>
