@@ -2,6 +2,7 @@
 	import { goto } from '$app/navigation';
 
 	export let inputValue = '';
+
 	function submitSearch() {
 		goto('/' + inputValue);
 	}
@@ -9,13 +10,14 @@
 
 <form on:submit|preventDefault={submitSearch} class="searchbar">
 	<input
+		class="searchbar"
 		for="search"
 		type="search"
 		placeholder="search for movie"
 		name="search"
 		bind:value={inputValue}
-		target="_self"
-	/><button type="submit">Search</button>
+	/>
+	<button type="submit" on:submit{submitSearch}>Search</button>
 </form>
 
 <style>
