@@ -1,7 +1,7 @@
 <script>
 	import Card from '$lib/shared/Card.svelte';
 	import { page } from '$app/stores';
-	import SearchMovies from '$lib/shared/SearchMovies.svelte';
+
 	export let data;
 
 	const { movies, currentPage } = data;
