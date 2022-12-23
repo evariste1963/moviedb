@@ -1,7 +1,11 @@
+<script>
+</script>
+
 <div class="header">
-	<img src="src\lib\images\tmdb.svg" alt="tmdb" />
+	<div class="logo" />
+	<!-- <img src="src\lib\images\tmdb.svg" alt="tmdb" /> -->
 	<div class="banner">
-		<h1>MovieDb Movie Database</h1>
+		<h1>MovieDb -- Everything at your fingertips</h1>
 	</div>
 </div>
 
@@ -14,11 +18,13 @@
 		background-color: black;
 		height: 3rem;
 		color: rgb(247, 226, 200);
+		z-index: 999;
 	}
 
-	img {
-		width: 10rem;
+	.logo {
+		width: 8rem;
 		margin-left: 2rem;
+		background: url(../images/tmdb.svg) center no-repeat;
 	}
 
 	.banner {

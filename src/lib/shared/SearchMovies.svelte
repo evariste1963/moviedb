@@ -36,7 +36,7 @@
 		transition: 0.3s linear, color 0s, background-color 0s;
 		outline: var(--b) solid rgba(0, 0, 0, 0);
 		outline-offset: 0.6em;
-		font-size: 16px;
+		font-size: 1.5rem;
 		cursor: pointer;
 		border: 0;
 		user-select: none;

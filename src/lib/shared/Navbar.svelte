@@ -1,6 +1,5 @@
 <script>
 	import { page } from '$app/stores';
-
 	const nav = [
 		{ title: 'Home', path: '/' },
 		{ title: 'Popular', path: '/Movies/popular' },
@@ -10,12 +9,16 @@
 
 <navbar>
 	{#each nav as navitem}
-		<a
-			href={navitem.path}
-			class:selected={$page.route.id.includes(navitem.title.slice(-5).toLowerCase())}
-			class="button-89"
-			data-sveltekit-preload-data>{navitem.title}</a
-		>
+		{#if navitem.title !== 'Home'}
+			<a
+				href={navitem.path}
+				class:selected={$page.route.id.includes(navitem.path.slice(-5))}
+				class="button-89"
+				data-sveltekit-preload-data>{navitem.title}</a
+			>
+		{:else}
+			<a href={navitem.path} class="button-89" data-sveltekit-preload-data>{navitem.title} </a>
+		{/if}
 	{/each}
 </navbar>
 
@@ -28,7 +31,7 @@
 	}
 
 	navbar a {
-		font-size: 2rem;
+		font-size: 2rem !important;
 		font-weight: bold;
 		width: 15rem;
 		color: #4f4343;
