@@ -34,7 +34,7 @@
 		font-size: 2rem !important;
 		font-weight: bold;
 		width: 15rem;
-		color: #4f4343;
+
 		text-align: center;
 		padding: 2rem;
 		margin: 1rem;
@@ -42,7 +42,6 @@
 	}
 
 	.selected {
-		color: rgb(80, 15, 15);
-		text-decoration: none;
+		color: rgb(112, 14, 14) !important;
 	}
 </style>

@@ -71,6 +71,10 @@
 		color: rgb(168, 164, 164);
 	}
 
+	.button-89 {
+		color: black !important;
+	}
+
 	.currentPage {
 		font-size: 3rem;
 		margin: 0;
