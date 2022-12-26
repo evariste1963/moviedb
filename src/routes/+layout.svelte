@@ -26,12 +26,14 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: url(../lib/images/hero.jpg) no-repeat;
+		background: none /*url(../lib/images/hero.jpg) no-repeat*/;
 		background-position: 0% 50%;
 		background-size: cover;
 		opacity: 0.2;
 	}
 	.bodySection {
+		height: 100%;
+		overflow: none;
 		width: 80%;
 		margin: 0 auto;
 		border-left: 3px solid #373b44;

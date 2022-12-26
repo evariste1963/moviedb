@@ -48,6 +48,9 @@
 </div>
 
 <style>
+	.section {
+		height: 100%;
+	}
 	.pages {
 		width: 100%;
 		display: flex;

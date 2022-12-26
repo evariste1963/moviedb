@@ -1,6 +1,6 @@
 <!-- https://developers.themoviedb.org/3/movies/get-top-rated-movies-->
 <script>
-	import SearchMovies from '$lib/shared/SearchMovies.svelte';
+	import SearchMovies from '$lib/components/SearchMovies.svelte';
 </script>
 
 <section>

@@ -1,5 +1,5 @@
 <script>
-	import SingleMovie from '$lib/shared/SingleMovie.svelte';
+	import SingleMovie from '$lib/components/SingleMovie.svelte';
 	export let data;
 </script>
 

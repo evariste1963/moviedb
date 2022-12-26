@@ -31,10 +31,13 @@
 		align-items: center;
 		justify-content: center;
 		text-align: center;
+		height: 100%;
+		overflow: none;
 	}
 
 	.page {
 		width: 100%;
+		height: 100%;
 		height: fit-content;
 		text-align: center;
 	}

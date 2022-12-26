@@ -1,5 +1,5 @@
 <script>
-	import MovieTemplate from '$lib/shared/SearchedMoviesTemplate.svelte';
+	import MovieTemplate from '$lib/components/SearchedMoviesTemplate.svelte';
 
 	export let data;
 </script>
