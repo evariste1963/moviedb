@@ -1,4 +1,5 @@
 let API_KEY = '0e04b7df85fdc659ca268b3647959793';
+
 export async function load({ fetch, params }) {
 	let { search } = params;
 
