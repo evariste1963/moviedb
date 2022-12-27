@@ -36,8 +36,8 @@
 		overflow: none;
 		width: 80%;
 		margin: 0 auto;
-		border-left: 3px solid #373b44;
-		border-right: 3px solid #373b44;
+		/*border-left: 3px solid #373b44;
+		border-right: 3px solid #373b44;*/
 		position: relative;
 	}
 </style>
