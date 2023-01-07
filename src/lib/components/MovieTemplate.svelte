@@ -37,7 +37,7 @@
 	<ul>
 		{#each movies as movie}
 			<Card>
-				<a href={`/Movies/${movie.id}`} data-sveltekit-preload-data>
+				<a href={`/movies/${movie.id}`} data-sveltekit-preload-data>
 					<img src={`https:/image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title} />
 				</a>
 				<h3>{movie.title}</h3>

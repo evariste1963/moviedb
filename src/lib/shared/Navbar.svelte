@@ -2,8 +2,8 @@
 	import { page } from '$app/stores';
 	const nav = [
 		{ title: 'Home', path: '/' },
-		{ title: 'Popular', path: '/Movies/popular' },
-		{ title: 'Top Rated', path: '/Movies/top_rated' }
+		{ title: 'Popular', path: '/movies/popular' },
+		{ title: 'Top Rated', path: '/movies/top_rated' }
 	];
 </script>
 
