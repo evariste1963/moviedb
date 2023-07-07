@@ -1,11 +1,7 @@
-<script>
-</script>
-
 <div class="header">
 	<div class="logo" />
-	<!-- <img src="src\lib\images\tmdb.svg" alt="tmdb" /> -->
-	<div class="banner">
-		<h1>MovieDb -- Everything at your fingertips</h1>
+		<div class="banner">
+		<h1>MovieDb -- All Moives at your fingertips</h1>
 	</div>
 </div>
 
