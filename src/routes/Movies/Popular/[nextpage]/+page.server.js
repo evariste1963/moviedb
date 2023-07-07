@@ -2,7 +2,7 @@ import AJAX from '../../API.js';
 
 export const csr = false;
 export const ssr = true;
-export let currentPage;
+let currentPage;
 
 let pathname = 'popular';
 

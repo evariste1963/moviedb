@@ -26,7 +26,7 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
-		background: rgb(212, 212, 168) /*url(../lib/images/hero.jpg) no-repeat*/;
+		background: url(../lib/images/hero.jpg) no-repeat;
 		background-position: 0% 50%;
 		background-size: cover;
 		opacity: 0.2;

@@ -75,7 +75,7 @@
 	}
 
 	.button-89 {
-		color: black !important;
+		color: black;
 	}
 
 	.currentPage {
