@@ -45,25 +45,50 @@
 			</Card>
 		{/each}
 	</ul>
+	<div class="movie-bar">
+		{#if currentPage > 1}
+			<a
+				href={`${pathRoute}/${currentPage - 1}`}
+				target={currentPage < 3 ? '_self' : ''}
+				data-sveltekit-preload-data
+				class="button-89">Prev</a
+			>
+		{:else}
+			<p class="pageLinkIdle">Prev</p>
+		{/if}
+		<p class="currentPage">{currentPage}</p>
+		{#if currentPage == undefined || currentPage < 500}
+			<a
+				href={`${pathRoute}/${currentPage + 1}`}
+				target={currentPage < 3 ? '_self' : ''}
+				data-sveltekit-preload-data
+				class="button-89">Next</a
+			>
+		{:else}
+			<p class="pageLinkIdle">Next</p>
+		{/if}
+	</div>
 </div>
 
 <style>
 	.section {
 		height: 100%;
+		justify-content: center;
 	}
 	.pages {
 		width: 100%;
 		display: flex;
 		margin: 0.5rem auto;
 		color: #000;
-		text-align: center;
+		/*text-align: center;
 		justify-content: center;
-		align-items: center;
+		align-items: center;*/
 	}
 	.movie-bar {
 		display: flex;
 		margin: 0 auto;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.pageLinkIdle {
