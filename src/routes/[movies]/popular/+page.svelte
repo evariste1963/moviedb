@@ -4,4 +4,5 @@
 	export let data;
 </script>
 
-<MovieTemplate {data} />
+<MovieTemplate>{data}</MovieTemplate>
+<!-- <MovieTemplate {data} /> -->

@@ -1,7 +1,7 @@
 <div class="header">
 	<div class="logo" />
-		<div class="banner">
-		<h1>MovieDb -- All Moives at your fingertips</h1>
+	<div class="banner">
+		<h1>MovieDb -- All Movies at your fingertips</h1>
 	</div>
 </div>
 
